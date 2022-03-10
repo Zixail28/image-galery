@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+* {
+	margin: 0;
+	bottom: 0;
+	border: 0;
+	box-sizing: border-box;
+	font-family: 'Comfortaa', cursive;
+}
+
+html {
+	background-color: #000;
+}
+
+.header {
+	border-bottom: 5px solid orange;
+	
+}
+.header-container {
+	max-width: 1280px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 20px;
+	min-height: 70px;
+}
+
+h2 {
+	font-size: 32px;
+	color: #fff;
+}
+
+.input-box {
+	width: 350px;
+	position: relative;
+}
+
+.input {
+	width: 100%;
+	border-radius: 25px;
+	min-height: 36px;
+	padding: 8px 12px;
+	transition: all .9s;
+	font-size: 1rem;
+	outline: none;
+}
+
+.input:focus {
+	border: 1px solid orange;
+	box-shadow: 0 0 5px orange;
+}
+
+.fa-search {
+	color: #000;
+	position: absolute;
+	top: 24%;
+	right: 4%;
+	transition: 1s;
+	cursor: pointer;
+}
+
+.fa-search:hover {
+	color: orange;
+}
+
+.container {
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+.grid {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: space-evenly;
+}
+
+.imgs {
+	width: 380px;
+	height: 214px;
+	margin-top: 15px;
+	border-radius: 7px;
+	cursor: pointer;
+}
+
+@media (max-width: 705px){
+	.header-container {
+		justify-content: center;
+	}
+	h2 {
+		margin-top: 10px;
+	}
+	.input {
+		margin: 10px 0;
+	}
+	.fa-search {
+		top: 34%;
+	}
+}
